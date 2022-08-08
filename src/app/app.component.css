@@ -1,0 +1,93 @@
+* {
+    font-family: 'Roboto';
+  }
+  
+  .container {
+    padding-top: 160px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  
+  .todo-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 500px;
+    margin: auto;
+  }
+  
+  .input-group {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    padding-bottom: 11px;
+  }
+  
+  input {
+    flex-grow: 1;
+    padding: 13px;
+    font-size: 16.5px;
+    color: #1c1c1c;
+  }
+  
+  ::placeholder {
+    color: rgb(56, 56, 56);  
+  }
+  
+  input:focus {
+    border-style: solid;
+    outline: none !important;
+    border: 1px solid rgb(48, 48, 48);
+    box-shadow: 0 0 10px rgb(171, 171, 171);
+  }
+  
+  .add-button {
+    border-style: none;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: rgb(23, 23, 23);
+    font-size: x-large;
+    font-weight: bold;
+    /* color: white; */
+  }
+  button{
+    border-style: none;
+    cursor: pointer;
+    height: 100%;
+  }
+  .done-button {
+    background-color: #242424;
+    color: #ffffff;
+  }
+  .remove-button {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  table {
+    list-style-type: none;
+    margin: auto;
+    width: 100%;
+    padding: 0%;
+  }
+  
+  tr {
+    /* padding: 20px; */
+    height: 50px;
+    text-align: left;
+  
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .even {
+    background-color: rgb(44, 44, 44);
+    color: rgb(255, 255, 255);
+  }
+  
+  .odd {
+    background-color: rgb(11, 11, 11);
+    color: rgb(255, 255, 255);
+  }
