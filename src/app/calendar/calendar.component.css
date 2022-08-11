@@ -1,0 +1,10 @@
+div {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+mat-calendar {
+    width: 500px;
+}
