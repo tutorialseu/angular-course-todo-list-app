@@ -50,11 +50,18 @@
     font-weight: bold;
     /* color: white; */
   }
+
   button{
     border-style: none;
     cursor: pointer;
     height: 100%;
   }
+
+  button:disabled {
+    background-color: gray;
+    cursor: default;
+  }
+
   .done-button {
     background-color: #242424;
     color: #ffffff;
@@ -101,4 +108,9 @@
 
   p {
     line-height: 50px;
+  }
+
+  .validation-error {
+    color:rgb(232, 12, 12);
+    margin-bottom: 10px;
   }
