@@ -32,6 +32,7 @@ export class TaskListComponent implements OnInit {
       return;
 
     this.taskService.addTask(this.newTask);
+   
 
     taskNgForm.reset({date: this.newTask.date});
   }
@@ -41,6 +42,7 @@ export class TaskListComponent implements OnInit {
   
     if(userConfirmed){
       this.taskService.removeTask(exisitingTask);
+      
     }
   
   }

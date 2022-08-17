@@ -22,7 +22,7 @@
 
     </form>
       <table>
-        <tr *ngFor="let task of tasks; let i = index" [class.even]="i%2==0" [class.odd]="i%2">
+        <tr *ngFor="let task of tasks | async; let i = index" [class.even]="i%2==0" [class.odd]="i%2">
           <td>
             <p [class.is-done]="task.isDone" >
               {{task.title}}
