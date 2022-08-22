@@ -10,6 +10,7 @@ export class CalendarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    throw new Error("Failed to load the calendar.")
   }
 
   selectedDate = new Date();
