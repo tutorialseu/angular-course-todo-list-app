@@ -1,0 +1,53 @@
+.done-button {
+    background-color: #242424;
+    color: #ffffff;
+  }
+  .remove-button {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  table {
+    list-style-type: none;
+    margin: auto;
+    width: 100%;
+    padding: 0%;
+  }
+  
+  tr {
+    /* padding: 20px; */
+    height: 50px;
+    text-align: left;
+  
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  td {
+    margin-left: 1rem;
+  }
+  
+  .even {
+    background-color: rgb(44, 44, 44);
+    color: rgb(255, 255, 255);
+  }
+  
+  .odd {
+    background-color: rgb(11, 11, 11);
+    color: rgb(255, 255, 255);
+  }
+
+  .is-done {
+    text-decoration: line-through;
+  }
+
+  p {
+    line-height: 50px;
+  }
+
+  button{
+    border-style: none;
+    cursor: pointer;
+    height: 100%;
+  }

@@ -21,20 +21,7 @@
       </div>
 
     </form>
-      <table>
-        <tr *ngFor="let task of tasks | async; let i = index" [class.even]="i%2==0" [class.odd]="i%2">
-          <td>
-            <p [class.is-done]="task.isDone" >
-              {{task.title}}
-            </p>
-          </td>
-          <td>
-            <button (click)="remove(task)" class="remove-button">X</button>
-            <button (click)="task.toggleIsDone()" class="done-button">
-              {{task.isDone? "Undo" : "Done"}}
-            </button>
-          </td>
-        </tr>      
-      </table>
+      
+    <task-table [tasks]="(tasks | async) ?? []" (onRemove)="remove($event)"></task-table>
     </div>
   </div>
